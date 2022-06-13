@@ -1,0 +1,63 @@
+.adtocart{
+    text-decoration: none;
+    margin-top: 1vh;
+    color: aliceblue;
+    width:15vw;
+    border: 0.5vh hsl(120, 78%, 36%) solid;
+    border-radius: 1vh;
+}
+
+.adtocart:hover{
+    background-color: #14a314;
+    font-weight: 500;
+    color:black;
+    box-shadow: #14a314;
+}
+
+#card{
+    background-color: blue;
+    border: none;
+    border-radius:5vh;
+    height:40vh;
+    width:20vw;
+    position:relative;
+    margin:5vh 0 0 0;
+    text-align:center;
+}
+
+#cards{
+    --num-cols: 4;
+    /* box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: 2vw;
+    
+    padding: 0 5vw;
+}
+
+#numcart {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 25%;
+    margin: 1vh 0 0 1vw;
+    min-width: 2vw;
+    text-align: center;
+    padding: 0 0.5vw;
+}
+
+.navbar{
+    width: 100vw;
+}
+
+/* @media screen and (max-width: 1024px) and (min-width: 540px){
+    #cards{
+        --num-cols: 3;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #cards{
+        --num-cols: 2;
+    }
+} */
