@@ -6,7 +6,7 @@ export const Header = ({num}) => {
         <>
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">Home</Link>
+                    <Link className="navbar-brand" to="/food-order-management/">Home</Link>
                     {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button> */}
@@ -18,7 +18,7 @@ export const Header = ({num}) => {
                         </ul>
                     </div> */}
                     <div className='text-light ms-auto me-3 d-flex'>
-                        <Link className='nav-link' to="/cart"><img src="images/cart-bag.ico" height='35vh' alt="cart bag" /> Cart</Link>
+                        <Link className='nav-link' to="/food-order-management/cart"><img src="images/cart-bag.ico" height='35vh' alt="cart bag" /> Cart</Link>
                         <div id="numcart">{num}</div>
                     </div>
                 </div>

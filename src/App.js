@@ -41,8 +41,8 @@ function App() {
     <Router>
     <Header num={cartItems.length}/>
       <Routes>
-        <Route path="/" element={<Cards foods={foods} addToCart={addToCart}/>}/>
-        <Route path="/cart" element={<Cart foods={cartItems} removeFromCart={removeFromCart}/>}/>
+        <Route path="/food-order-management/" element={<Cards foods={foods} addToCart={addToCart}/>}/>
+        <Route path="/food-order-management/cart" element={<Cart foods={cartItems} removeFromCart={removeFromCart}/>}/>
       </Routes>
     </Router>
     </>
