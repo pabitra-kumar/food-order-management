@@ -3,25 +3,26 @@
     margin-top: 1vh;
     color: aliceblue;
     width:15vw;
-    border: 0.5vh hsl(120, 78%, 36%) solid;
+    border: 0.5vh rgb(40, 204, 76) solid;
     border-radius: 1vh;
 }
 
 .adtocart:hover{
-    background-color: #14a314;
+    background: linear-gradient(45deg,#95e23e,rgb(57, 223, 93));
     font-weight: 500;
     color:black;
     box-shadow: #14a314;
 }
 
 #card{
-    background-color: blue;
+    background: linear-gradient(90deg,rgb(76, 115, 199),rgb(65, 221, 226));
     border: none;
     border-radius:5vh;
     height:40vh;
-    width:20vw;
+    width:19vw;
     position:relative;
-    margin:5vh 0 0 0;
+    margin:5vh 1vw 0;
+    box-shadow: 0.6vh 0.6vh 2vh rgb(65, 221, 226), -0.6vh 0.6vh 2vh rgb(76, 115, 199);
     text-align:center;
 }
 
@@ -30,11 +31,14 @@
     /* box-sizing: border-box; */
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
-    gap: 2vw;
-    
     padding: 0 5vw;
 }
-
+#cards::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+}
 #numcart {
     background-color: red;
     color: white;
@@ -48,6 +52,10 @@
 
 .navbar{
     width: 100vw;
+}
+
+#cart-icon{
+    align-items: center;
 }
 
 /* @media screen and (max-width: 1024px) and (min-width: 540px){

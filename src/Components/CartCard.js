@@ -6,7 +6,7 @@ export const CartCard = ({img, food, name, removeFromCart}) => {
   }
   let imgStyle={
     height:"25vh",
-    width:"20vw",
+    width:"19vw",
     borderTopRightRadius:"5vh",
     borderTopLeftRadius:"5vh",
   }

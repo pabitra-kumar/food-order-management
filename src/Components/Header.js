@@ -18,7 +18,7 @@ export const Header = ({num}) => {
                         </ul>
                     </div> */}
                     <div className='text-light ms-auto me-3 d-flex'>
-                        <Link className='nav-link' to="/food-order-management/cart"><img src="images/cart-bag.ico" height='35vh' alt="cart bag" /> Cart</Link>
+                        <Link className='nav-link' to="/food-order-management/cart" id='cart-icon'><img src="images/cart-bag.ico" height='35vh' alt="cart bag" /> Cart</Link>
                         <div id="numcart">{num}</div>
                     </div>
                 </div>
