@@ -1,9 +1,9 @@
 .adtocart{
     text-decoration: none;
-    margin-top: 1vh;
+    margin-top: 5px;
     color: aliceblue;
-    width:15vw;
-    border: 0.5vh rgb(40, 204, 76) solid;
+    width:180px;
+    border: 3px rgb(40, 204, 76) solid;
     border-radius: 1vh;
 }
 
@@ -17,27 +17,26 @@
 #card{
     background: linear-gradient(90deg,rgb(76, 115, 199),rgb(65, 221, 226));
     border: none;
-    border-radius:5vh;
-    height:40vh;
-    width:19vw;
+    border-radius:30px;
+    height:270px;
+    width:250px;
     position:relative;
-    margin:5vh 1vw 0;
-    box-shadow: 0.6vh 0.6vh 2vh rgb(65, 221, 226), -0.6vh 0.6vh 2vh rgb(76, 115, 199);
+    box-shadow: 6px 6px 20px rgb(65, 221, 226), -6px 6px 20px rgb(76, 115, 199);
     text-align:center;
 }
 
 #cards{
     --num-cols: 4;
     /* box-sizing: border-box; */
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    padding: 0 5vw;
-}
-#cards::before{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-   
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 35px;
+    justify-items: center;
+    padding: 35px 0 20px;
+    margin-top: 45px;
+    align-items: center;
+    min-height: 100vh;
 }
 #numcart {
     background-color: red;
@@ -51,7 +50,9 @@
 }
 
 .navbar{
-    width: 100vw;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #cart-icon{

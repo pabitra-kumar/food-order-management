@@ -5,14 +5,14 @@ export const Card = ({img, food, name, addToCart}) => {
     
   }
   let imgStyle={
-    height:"25vh",
-    width:"19vw",
-    borderTopRightRadius:"5vh",
-    borderTopLeftRadius:"5vh",
+    height:"170px",
+    width:"250px",
+    borderTopRightRadius:"30px",
+    borderTopLeftRadius:"30px",
   }
   let nmStyle={
     color: "rgb(251, 255, 5)",
-    margin:"1% 0 0 0"
+    margin:"5px 0 0 0"
   }
   return (
     <>
