@@ -1,10 +1,11 @@
 .adtocart{
     text-decoration: none;
-    margin-top: 5px;
+    margin: 10px 0 10px 0;
     color: aliceblue;
     width:180px;
     border: 3px rgb(40, 204, 76) solid;
     border-radius: 1vh;
+
 }
 
 .adtocart:hover{
@@ -16,9 +17,9 @@
 
 #card{
     background: linear-gradient(90deg,rgb(76, 115, 199),rgb(65, 221, 226));
-    border: none;
+    border: solid 5px gold;
     border-radius:30px;
-    height:270px;
+    min-height:270px;
     width:250px;
     position:relative;
     box-shadow: 6px 6px 20px rgb(65, 221, 226), -6px 6px 20px rgb(76, 115, 199);
@@ -59,6 +60,33 @@
     align-items: center;
 }
 
+#card .flex-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+#card .flex-button a {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: larger;
+    min-width: 38px;
+    min-height: 38px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#card .flex-button .remove {
+    background-color: rgb(226, 0, 0);
+
+}
+
+#card .info {
+    background-color: gold;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+}
 /* @media screen and (max-width: 1024px) and (min-width: 540px){
     #cards{
         --num-cols: 3;
